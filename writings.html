@@ -2,24 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1440">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writings</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-            <img src="assets/images/logo.png" alt="Varsha logo">
-            </a>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Varsha logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="work.html" class="navbar-link">Work</a>
+                <a href="writings.html" class="navbar-btn-writings">Writings</a>
+                <a href="about.html" class="navbar-link">About Me</a>
+            </nav>
+            <!-- Hamburger icon for mobile -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+                <span class="hamburger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M4.40918 6.88086H20.4092V8.88086H4.40918V6.88086ZM4.40918 11.8809H20.4092V13.8809H4.40918V11.8809ZM4.40918 16.8809H20.4092V18.8809H4.40918V16.8809Z" fill="black"/>
+                    </svg>
+                </span>
+            </button>
         </div>
-        <div class="nav-links">
-            <a href="work.html">Work</a>
-            <a href="writings.html" class="navbar-btn-writings">Writings</a>
-            <a href="about.html">About Me</a>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Varsha logo">
+                </a>
+            </div>
+            <div class="mobile-menu-navbar-right">
+                <button class="close-menu" id="close-menu" aria-label="Close menu">
+                    <span class="close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.192 6.34424L11.949 10.5862L7.70697 6.34424L6.29297 7.75824L10.535 12.0002L6.29297 16.2422L7.70697 17.6562L11.949 13.4142L16.192 17.6562L17.606 16.2422L13.364 12.0002L17.606 7.75824L16.192 6.34424Z" fill="black"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
         </div>
-    </nav>
+        <div class="mobile-menu-body">
+            <div class="mobile-menu-list">
+                <a href="work.html" class="mobile-menu-link">Work</a>
+                <a href="writings.html" class="mobile-menu-btn-selected">Writings</a>
+                <a href="about.html" class="mobile-menu-link">About Me</a>
+            </div>
+        </div>
+    </div>
+
     <section class="writings-main-section">
         <div class="writings-main-left">
             <div class="writings-main-title-group">

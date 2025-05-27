@@ -67,4 +67,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const closeMenu = document.getElementById('close-menu');
+
+    if (hamburger && overlay && closeMenu) {
+        hamburger.addEventListener('click', () => {
+            overlay.classList.add('open');
+        });
+        closeMenu.addEventListener('click', () => {
+            overlay.classList.remove('open');
+        });
+        // Optional: close menu when clicking a link
+        overlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                overlay.classList.remove('open');
+            });
+        });
+    }
 }); 
