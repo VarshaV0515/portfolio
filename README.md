@@ -1,4 +1,4 @@
-# Website Project
+# Portfolio Project
 
 This project is a responsive website implementation based on Figma designs.
 
