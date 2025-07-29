@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitizing Service Tools for Maximum Efficiency - Varsha Patil</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/Logo.png" alt="Varsha logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="work.html" class="navbar-btn-work">Work</a>
+                <a href="writings.html" class="navbar-link">Writings</a>
+                <a href="about.html" class="navbar-link">About Me</a>
+            </nav>
+            <!-- Hamburger icon for mobile -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+                <span class="hamburger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M4.40918 6.88086H20.4092V8.88086H4.40918V6.88086ZM4.40918 11.8809H20.4092V13.8809H4.40918V11.8809ZM4.40918 16.8809H20.4092V18.8809H4.40918V16.8809Z" fill="black"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/Logo.png" alt="Varsha logo">
+                </a>
+            </div>
+            <div class="mobile-menu-navbar-right">
+                <button class="close-menu" id="close-menu" aria-label="Close menu">
+                    <span class="close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.192 6.34424L11.949 10.5862L7.70697 6.34424L6.29297 7.75824L10.535 12.0002L6.29297 16.2422L7.70697 17.6562L11.949 13.4142L16.192 17.6562L17.606 16.2422L13.364 12.0002L17.606 7.75824L16.192 6.34424Z" fill="black"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu-body">
+            <div class="mobile-menu-list">
+                <a href="work.html" class="mobile-menu-btn-selected">Work</a>
+                <a href="writings.html" class="mobile-menu-link">Writings</a>
+                <a href="about.html" class="mobile-menu-link">About Me</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Reducing Fake Accounts on [Platform Name]</h1>
+                <p>A case study on improving platform integrity and user experience by tackling the challenge of fake accounts.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>1. Introduction</h2>
+                <p>This project addresses the pervasive issue of fake accounts on [Platform Name] in [Year], focusing on the strategic efforts of a dedicated "tiger team." As the lead designer, my role involved spearheading design solutions that significantly mitigated this problem.</p>
+                <p>The initiatives resulted in a remarkable <strong>12% reduction in accepted fake account invites</strong> and played a pivotal role in shaping [Platform Name]'s long-term product strategy around user verification.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>2. The What and Why</h2>
+                <p>Fake accounts continue to be a significant challenge across all social platforms, including [Platform Name]. While AI offers initial detection, it often falls short in identifying sophisticated fraudulent profiles, necessitating human-centered design interventions.</p>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/900x400?text=Placeholder+Image:+Similar+Fake+Accounts" alt="Placeholder Image showing similar fake accounts">
+                </div>
+                <p>This section explores the various manifestations of fake accounts and the critical need for thoughtful design to empower users to make informed decisions about their connections.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>3. Effective Decision Making & Approach</h2>
+                <p>Our approach involved breaking down silos between product, engineering, and design teams. We adopted the RAPID framework to streamline decision-making and ensure efficient progress.</p>
+                <h3>Tiger Team Roles:</h3>
+                <ul class="list-items">
+                    <li><strong>Responsible (R):</strong> Product Manager</li>
+                    <li><strong>Approve (A):</strong> Lead Designer (me)</li>
+                    <li><strong>Perform (P):</strong> Engineering Team</li>
+                    <li><strong>Input (I):</strong> Data Science, Trust & Safety</li>
+                    <li><strong>Decide (D):</strong> Senior Leadership</li>
+                </ul>
+                <h3>Initial Hypotheses:</h3>
+                <ul class="list-items">
+                    <li>Adding friction to suspicious connection requests will reduce acceptance rates.</li>
+                    <li>Providing more objective information about profiles will help users identify fakes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>4. What Got Shipped</h2>
+                <p>We implemented several key features to combat fake accounts:</p>
+
+                <h3>Contextual safety interventions for suspicious accounts</h3>
+                <p>We designed interventions to appear when users interact with invitations from suspicious accounts, particularly those lacking mutual connections. This aimed to introduce a necessary "friction" point, prompting users to reconsider before accepting.</p>
+                <div class="small-image-placeholder">
+                    <img src="https://via.placeholder.com/600x250?text=Placeholder+Image:+Pending+Invites+Screen" alt="Placeholder Image of Pending Invites Screen">
+                </div>
+                <p>Users would see a clear alert when attempting to connect or message such profiles, guiding them towards a safer interaction or decision.</p>
+                <div class="small-image-placeholder">
+                    <img src="https://via.placeholder.com/600x250?text=Placeholder+Image:+Safety+Intervention+in+Messaging" alt="Placeholder Image of Safety Intervention in Messaging">
+                </div>
+
+                <h3>Additional signals with "About this profile"</h3>
+                <p>To empower users with more data, we introduced a feature that provides objective facts about a profile. This "About this profile" section, accessible via the hamburger menu, displays crucial information like profile creation date and last update.</p>
+                <div class="small-image-placeholder">
+                    <img src="https://via.placeholder.com/600x250?text=Placeholder+Image:+About+this+Profile+Option" alt="Placeholder Image of About this Profile Option">
+                </div>
+                <p>This transparency helps users quickly assess the legitimacy of a profile at a glance.</p>
+                <div class="small-image-placeholder">
+                    <img src="https://via.placeholder.com/600x250?text=Placeholder+Image:+About+this+Profile+Content" alt="Placeholder Image of About this Profile Content">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>5. Impact and Learning</h2>
+                <p>The project successfully achieved a <strong>12% reduction in accepted fake account invites</strong>, demonstrating the effectiveness of our design interventions.</p>
+                <h3>Key Learnings:</h3>
+                <ul class="list-items">
+                    <li><strong>Project & Stakeholder Management:</strong> The importance of clear communication and alignment across diverse teams.</li>
+                    <li><strong>Leadership & Communication:</strong> How consistent, transparent updates can drive project momentum.</li>
+                    <li><strong>Opportunity for Impact:</strong> Even small design changes can lead to significant positive outcomes for platform integrity and user trust.</li>
+                </ul>
+            </div>
+        </section>
+               <!-- Project Navigation -->
+        <section class="project-navigation">
+            <div class="project-navigation-container">
+                <a href="work.html" class="project-nav-back">
+                    <span>← Back to Work</span>
+                </a>
+                <div class="project-nav-links">
+                    <a href="pharmacy.html" class="project-nav-next">
+                        <span>Next Project: Pharmacy Curbside Pickup →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="assets/images/Logo.png" alt="Varsha logo" />
+                </a>
+            </div>
+            <nav class="footer-nav" style="white-space: nowrap;">
+                <a href="index.html" class="navbar-link" style="white-space: nowrap;">Home</a>
+                <a href="work.html" class="navbar-link" style="white-space: nowrap;">Work</a>
+                <a href="writings.html" class="navbar-link" style="white-space: nowrap;">Writings</a>
+                <a href="about.html" class="navbar-link" style="white-space: nowrap;">About Me</a>
+            </nav>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-copyright">
+            © 2025 VARSHA PATIL. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="work-page">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/images/Logo.png" alt="Varsha logo">
+              </a>
+            </div>
+            <nav class="nav-links">
+              <a href="work.html" class="navbar-btn-work">Work</a>
+              <a href="writings.html" class="navbar-link">Writings</a>
+              <a href="about.html" class="navbar-link">About Me</a>
+            </nav>
+            <!-- Hamburger icon for mobile -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+              <span class="hamburger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <path d="M4.40918 6.88086H20.4092V8.88086H4.40918V6.88086ZM4.40918 11.8809H20.4092V13.8809H4.40918V11.8809ZM4.40918 16.8809H20.4092V18.8809H4.40918V16.8809Z" fill="black"/>
+                </svg>
+              </span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="projects-section">
+            <div class="section-title">
+              <h1>Product and Design</h1>
+              <p>Purposeful work and their meaningful impacts on businesses and users</p>
+            </div>
+            <div class="content-section">
+              <div class="pills" id="project-pills">
+                <button class="pill active" data-tag="All">All</button>
+                <button class="pill" data-tag="Enterprise">Enterprise</button>
+                <button class="pill" data-tag="E-commerce">E-commerce</button>
+                <button class="pill" data-tag="Healthcare">Healthcare</button>
+                <button class="pill" data-tag="Service Design">Service Design</button>
+              </div>
+              <div class="project-grid" id="project-grid">
+                <div class="project-card" 
+                          data-tags="Enterprise,Service Design"
+                          data-link="https://gamma.app/docs/Walmart-Auto-Care-Centers-qf189c976k4qmy7?mode=present#card-l0ciex4mbn5a2so">
+                         <div class="project-image" style="background-image: url('assets/images/placeholder1.png');"></div>
+                      <!--  <div class="project-image" style="background-image: url('assets/images/Walmart-Auto-Care-Centers.png');"></div> -->
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">Digital Service</span>
+                      <h5 class="project-card-title">Digitizing Service Tools for Maximum Efficiency</h5>
+                      <p class="project-card-desc">Comprehensive All-in-One Management Tool designed specifically for Auto Care Centers</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Walmart</span>
+                      <span class="project-meta-time">2021 • 7 min read</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card" 
+                          data-tags="Enterprise,Service Design"
+                          data-link="https://gamma.app/docs/Walmart-Wireless-Order-Support-Tool-jy5wadmdef6xvye?mode=present#card-5u9rqbm1owpmrcc">
+                       <div class="project-image" style="background-image: url('assets/images/OST_cover_img.png');"></div>
+                    <!--  <div class="project-image" style="background-image: url('assets/images/Walmart-Auto-Care-Centers.png');"></div> -->
+                <div class="project-card-content">
+                  <div class="project-card-main">
+                    <span class="project-tag">Store Operations</span>
+                    <h5 class="project-card-title">Wireless Order Support Tool</h5>
+                    <p class="project-card-desc">A unified solution that consolidates information and restructures data for improved efficiency</p>
+                  </div>
+                  <div class="project-card-spacer"></div>
+                  <div class="project-card-meta">
+                    <span class="project-meta-company">Walmart</span>
+                    <span class="project-meta-time">2021 • 5 min read</span>
+                  </div>
+                </div>
+              </div>
+                <!--<div class="project-card" 
+                            data-tags="Healthcare,E-commerce" 
+                            data-link="https://gamma.app/docs/Walmart-Rx-Curbside-Pickup-Delivery-so0cdqghehj4rsw?mode=present#card-h8nbdmzm8qgrj0x">
+                  <div class="project-image" style="background-image: url('assets/images/placeholder2.png');"></div>
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">Pharmacy</span>
+                      <h5 class="project-card-title">Curbside prescription pickup and contactless payment</h5>
+                      <p class="project-card-desc">Online Prescription Ordering and Curbside Pickup for a Seamless Omnichannel Experience</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Walmart</span>
+                      <span class="project-meta-time">2020 • 5 min read</span>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="project-card" 
+                          data-tags="Healthcare"
+                          data-link="https://gamma.app/docs/Flocare-Empowering-Home-Health-Clinicians-kb9uiwwd7w3wkyd?mode=present#card-55g5m9ejvykollt">
+                  <div class="project-image" style="background-image: url('assets/images/placeholder3.png');"></div>
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">Home Healthcare</span>
+                      <h5 class="project-card-title">A Home Health Clinician's Assistant</h5>
+                      <p class="project-card-desc">Assists home health clinicians in the field to enhance productivity and organization</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Flocare</span>
+                      <span class="project-meta-time">2019 • 6 min read</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card" 
+                  data-tags="Service Design,Enterprise"
+                  data-link="https://gamma.app/docs/Swiss-e-Democracy-Redefining-Election-Operations-fhjvdfg0oqp0xr0?mode=present#card-a3gpx7j0cg7ovnv">
+                  <div class="project-image" style="background-image: url('assets/images/placeholder8.png');"></div>
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">Service Design</span>
+                      <h5 class="project-card-title">Swiss e-Democracy: Redefining Election Operations</h5>
+                      <p class="project-card-desc">A service design case study in collaboration with Swiss Post, Cantons, and Scytl</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Switzerland Government</span>
+                      <span class="project-meta-time">2017 • 6 min read</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card" 
+                data-tags="E-commerce"
+                data-link="https://gamma.app/docs/Transforming-Convenience-Walmarts-Tire-Installation-Scheduler-awxwdxube5hvaax?mode=present#card-w9zotj3ycuq0nim">
+                  <div class="project-image" style="background-image: url('assets/images/tireprojectcover1.png');"></div>
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">E-commerce</span>
+                      <h5 class="project-card-title">Tire Installation Service Online Scheduler</h5>
+                      <p class="project-card-desc">Enable tire installation service online combining with grocery/GM pickups</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Walmart</span>
+                      <span class="project-meta-time">2021 • 7 min read</span>
+                    </div>
+                  </div>
+                </div>
+              <!--  <div class="project-card" 
+                data-tags="Service Design,Enterprise"
+                data-link="https://gamma.app/docs/Museo-del-Novecento-UX-Research-Case-Study-mmfhhi3onayenlh?mode=present#card-o2msxxo6j9zrfuu">
+                  <div class="project-image" style="background-image: url('assets/images/museodelnovecento.png');"></div>
+                  <div class="project-card-content">
+                    <div class="project-card-main">
+                      <span class="project-tag">Research and Strategy</span>
+                      <h5 class="project-card-title">UX Research for Museo del Novecento</h5>
+                      <p class="project-card-desc">Uncover visitor insights via ethnographic research, focusing on “Space as Concept”</p>
+                    </div>
+                    <div class="project-card-spacer"></div>
+                    <div class="project-card-meta">
+                      <span class="project-meta-company">Museum at Milan</span>
+                      <span class="project-meta-time">2016 • 7 min read</span>
+                    </div>
+                  </div> 
+                </div>-->
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html">
+            <img src="assets/images/Logo.png" alt="Varsha logo" />
+            </a>
+          </div>
+          <nav class="footer-nav" style="white-space: nowrap;">
+            <a href="index.html" class="navbar-link" style="white-space: nowrap;">Home</a>
+            <a href="work.html" class="navbar-link" style="white-space: nowrap;">Work</a>
+            <a href="writings.html" class="navbar-link" style="white-space: nowrap;">Writings</a>
+            <a href="about.html" class="navbar-link" style="white-space: nowrap;">About Me</a>
+          </nav>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-copyright">
+          © 2025 VARSHA PATIL. All rights reserved.
+        </div>
+      </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <div class="mobile-menu-navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/Logo.png" alt="Varsha logo">
+          </a>
+        </div>
+        <div class="mobile-menu-navbar-right">
+          <button class="close-menu" id="close-menu" aria-label="Close menu">
+            <span class="close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.192 6.34424L11.949 10.5862L7.70697 6.34424L6.29297 7.75824L10.535 12.0002L6.29297 16.2422L7.70697 17.6562L11.949 13.4142L16.192 17.6562L17.606 16.2422L13.364 12.0002L17.606 7.75824L16.192 6.34424Z" fill="black"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu-body">
+        <div class="mobile-menu-list">
+          <a href="work.html" class="mobile-menu-btn-selected">Work</a>
+          <a href="writings.html" class="mobile-menu-link">Writings</a>
+          <a href="about.html" class="mobile-menu-link">About Me</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html> 
+
