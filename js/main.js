@@ -50,9 +50,27 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function(e) {
             // Prevent click if user is selecting text
             if (window.getSelection().toString()) return;
+            
             const url = card.getAttribute('data-link');
-            if (url) {
-                window.open(url, '_blank', 'noopener');
+            const pdfUrl = card.getAttribute('data-pdf');
+            
+            if (pdfUrl) {
+                // Show choice dialog if both Gamma and PDF are available
+                const choice = confirm('Choose your preferred format:\n\nClick "OK" for PDF version\nClick "Cancel" for Gamma presentation');
+                if (choice) {
+                    // User chose PDF
+                    window.open(pdfUrl, '_blank', 'noopener');
+                } else {
+                    // User chose Gamma presentation
+                    if (url) {
+                        window.open(url, '_blank', 'noopener');
+                    }
+                }
+            } else {
+                // Only Gamma presentation available
+                if (url) {
+                    window.open(url, '_blank', 'noopener');
+                }
             }
         });
         // Optional: Keyboard accessibility
@@ -61,8 +79,25 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 const url = card.getAttribute('data-link');
-                if (url) {
-                    window.open(url, '_blank', 'noopener');
+                const pdfUrl = card.getAttribute('data-pdf');
+                
+                if (pdfUrl) {
+                    // Show choice dialog if both Gamma and PDF are available
+                    const choice = confirm('Choose your preferred format:\n\nClick "OK" for PDF version\nClick "Cancel" for Gamma presentation');
+                    if (choice) {
+                        // User chose PDF
+                        window.open(pdfUrl, '_blank', 'noopener');
+                    } else {
+                        // User chose Gamma presentation
+                        if (url) {
+                            window.open(url, '_blank', 'noopener');
+                        }
+                    }
+                } else {
+                    // Only Gamma presentation available
+                    if (url) {
+                        window.open(url, '_blank', 'noopener');
+                    }
                 }
             }
         });
