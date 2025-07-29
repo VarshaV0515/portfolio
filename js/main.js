@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Make project cards clickable
-    document.querySelectorAll('.project-card[data-link]').forEach(card => {
+    document.querySelectorAll('.project-card[data-link], .project-card[data-pdf]').forEach(card => {
         card.addEventListener('click', function(e) {
             // Prevent click if user is selecting text
             if (window.getSelection().toString()) return;
@@ -54,7 +54,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const url = card.getAttribute('data-link');
             const pdfUrl = card.getAttribute('data-pdf');
             
-            if (pdfUrl) {
+            // ORIGINAL LOGIC (commented out for now)
+            // if (pdfUrl) {
+            //     // Show choice dialog if both Gamma and PDF are available
+            //     const choice = confirm('Choose your preferred format:\\n\\nClick "OK" for PDF version\\nClick "Cancel" for Gamma presentation');
+            //     if (choice) {
+            //         // User chose PDF
+            //         window.open(pdfUrl, '_blank', 'noopener');
+            //     } else {
+            //         // User chose Gamma presentation
+            //         if (url) {
+            //             window.open(url, '_blank', 'noopener');
+            //         }
+            //     }
+            // } else {
+            //     // Only Gamma presentation available
+            //     if (url) {
+            //         window.open(url, '_blank', 'noopener');
+            //     }
+            // }
+
+            // CURRENT LOGIC (only show dialog when both options are available)
+            if (pdfUrl && url) {
                 // Show choice dialog if both Gamma and PDF are available
                 const choice = confirm('Choose your preferred format:\n\nClick "OK" for PDF version\nClick "Cancel" for Gamma presentation');
                 if (choice) {
@@ -62,15 +83,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     window.open(pdfUrl, '_blank', 'noopener');
                 } else {
                     // User chose Gamma presentation
-                    if (url) {
-                        window.open(url, '_blank', 'noopener');
-                    }
-                }
-            } else {
-                // Only Gamma presentation available
-                if (url) {
                     window.open(url, '_blank', 'noopener');
                 }
+            } else if (pdfUrl) {
+                // Only PDF available
+                window.open(pdfUrl, '_blank', 'noopener');
+            } else if (url) {
+                // Only Gamma presentation available
+                window.open(url, '_blank', 'noopener');
             }
         });
         // Optional: Keyboard accessibility
@@ -81,7 +101,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 const url = card.getAttribute('data-link');
                 const pdfUrl = card.getAttribute('data-pdf');
                 
-                if (pdfUrl) {
+                // ORIGINAL LOGIC (commented out for now)
+                // if (pdfUrl) {
+                //     // Show choice dialog if both Gamma and PDF are available
+                //     const choice = confirm('Choose your preferred format:\\n\\nClick "OK" for PDF version\\nClick "Cancel" for Gamma presentation');
+                //     if (choice) {
+                //         // User chose PDF
+                //         window.open(pdfUrl, '_blank', 'noopener');
+                //     } else {
+                //         // User chose Gamma presentation
+                //         if (url) {
+                //             window.open(url, '_blank', 'noopener');
+                //     }
+                //     }
+                // } else {
+                //     // Only Gamma presentation available
+                //     if (url) {
+                //         window.open(url, '_blank', 'noopener');
+                //     }
+                // }
+
+                // CURRENT LOGIC (only show dialog when both options are available)
+                if (pdfUrl && url) {
                     // Show choice dialog if both Gamma and PDF are available
                     const choice = confirm('Choose your preferred format:\n\nClick "OK" for PDF version\nClick "Cancel" for Gamma presentation');
                     if (choice) {
@@ -89,15 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         window.open(pdfUrl, '_blank', 'noopener');
                     } else {
                         // User chose Gamma presentation
-                        if (url) {
-                            window.open(url, '_blank', 'noopener');
-                        }
-                    }
-                } else {
-                    // Only Gamma presentation available
-                    if (url) {
                         window.open(url, '_blank', 'noopener');
                     }
+                } else if (pdfUrl) {
+                    // Only PDF available
+                    window.open(pdfUrl, '_blank', 'noopener');
+                } else if (url) {
+                    // Only Gamma presentation available
+                    window.open(url, '_blank', 'noopener');
                 }
             }
         });
