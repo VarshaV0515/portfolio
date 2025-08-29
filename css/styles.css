@@ -133,7 +133,7 @@ body {
     width: 100%;
     max-width: 1440px;
     min-height: 1144px; /* Use min-height for flexibility */
-    padding: 112px 64px;
+    padding: 64px 64px;
     gap: 80px;
     background: #F6F5ED; /* Or use: var(--Color-Akaroa-Lighter, #F6F5ED); */
     margin: 0 auto;
@@ -153,11 +153,11 @@ body {
     color: #000; /* Or use: var(--Color-Scheme-1-Text, #000); */
     text-align: center;
     font-family: 'Quattrocento', serif;
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 57.6px */
-    letter-spacing: -0.48px;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.32px;
     margin-bottom: 40px;
 }
 
@@ -503,9 +503,9 @@ body {
     align-items: flex-start;
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 112px 64px;
-    background: #F6F5ED; /* Or var(--Color-Akaroa-Lighter, #F6F5ED) */
+    margin: -40px auto 0 auto;
+    padding: 64px 64px;
+    background: #FFFFFF; /* White background to distinguish from projects section */
     box-sizing: border-box;
     gap: 80px;
 }
@@ -518,10 +518,10 @@ body {
 }
 .testimonial-title {
     font-family: 'Quattrocento', serif;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 120%;
-    letter-spacing: -0.48px;
+    letter-spacing: -0.32px;
     color: #000;
     margin: 0;
 }
@@ -673,7 +673,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #F6F5ED; /* Or var(--Color-Akaroa-Lighter, #F6F5ED) */
+    background: #FFFFFF; /* White background to match testimonials section */
     padding: 0 64px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* Or var(--Color-Scheme-1-Border, rgba(0, 0, 0, 0.15)) */
     box-sizing: border-box;
@@ -687,6 +687,20 @@ body {
     gap: 32px;
     box-sizing: border-box;
     justify-content: space-between;
+}
+
+.banner-content-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.banner-content-link:hover {
+    opacity: 0.8;
 }
 .banner-content {
     display: flex;
@@ -843,18 +857,53 @@ body {
 /* =========================
    Work PageProjects Section
    ========================= */
-   .projects-section {
+      .projects-section {
     display: flex;
     width: 100%;
     max-width: 1440px;
-    padding: 112px 64px;
+    padding: 64px 64px;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
     background: #F6F5ED; /* Or var(--Color-Akaroa-Lighter, #F6F5ED) */
     margin: 0 auto;
     box-sizing: border-box;
-  }
+   }
+
+   /* Apply project container styles to work page */
+   .projects-section .project-container {
+     display: flex;
+     align-items: stretch;
+     gap: 80px;
+     width: 100%;
+     margin-bottom: 40px;
+   }
+
+   .projects-section .project-column {
+     flex: 1 0 0;
+     display: flex;
+     align-items: stretch;
+   }
+
+   .projects-section .project-column .project-card {
+     width: 100%;
+     height: 100%;
+     max-width: none;
+     min-width: 0;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 0;
+   }
+
+   .projects-section .project-column .project-image {
+     flex: 2 0 400px;
+     min-height: 400px;
+   }
+
+   .projects-section .project-column .project-card-content {
+     flex: 1 1 auto;
+     min-height: 200px;
+   }
   
   .section-title {
     display: flex;
@@ -1493,11 +1542,11 @@ body {
 
   /* Project Work Section Tablet */
   .project-work {
-    padding: 64px 32px;
+    padding: 48px 32px;
     gap: 48px;
   }
   .section-title {
-    font-size: 40px;
+    font-size: 28px;
   }
   .project-container {
     gap: 48px;
@@ -1527,11 +1576,13 @@ body {
 
   /* Testimonials Section Tablet */
   .testimonial-section {
-    padding: 64px 32px;
+    margin: -32px auto 0 auto;
+    padding: 48px 32px;
     gap: 48px;
+    background: #FFFFFF;
   }
   .testimonial-title {
-    font-size: 40px;
+    font-size: 28px;
   }
   .testimonial-row {
     flex-wrap: wrap;
@@ -1610,7 +1661,18 @@ body {
 
   /* Work Page Tablet */
   .projects-section {
-    padding: 64px 32px;
+    padding: 48px 32px;
+    gap: 32px;
+  }
+  
+  .projects-section .project-container {
+    gap: 48px;
+    margin-bottom: 32px;
+  }
+  
+  .projects-section .project-column .project-image {
+    flex: 2 0 300px;
+    min-height: 300px;
   }
   .section-title h1 {
     font-size: 40px;
@@ -1700,12 +1762,12 @@ body {
 
   /* Project Work Section Mobile */
   .project-work {
-    padding: 32px 20px;
+    padding: 24px 20px;
     gap: 32px;
     min-height: auto;
   }
   .section-title {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 24px;
   }
   .project-container {
@@ -1783,9 +1845,11 @@ body {
 
   /* Testimonials Section Mobile */
   .testimonial-section {
-    padding: 32px 20px;
+    margin: -24px auto 0 auto;
+    padding: 24px 20px;
     gap: 32px;
     align-items: center;
+    background: #FFFFFF;
   }
   .testimonial-title-group {
     width: 100%;
@@ -1793,7 +1857,7 @@ body {
     text-align: center;
   }
   .testimonial-title {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
   .testimonial-subtitle {
@@ -1890,7 +1954,23 @@ body {
 
   /* Work Page Mobile */
   .projects-section {
-    padding: 32px 20px;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+  
+  .projects-section .project-container {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .projects-section .project-column .project-card {
+    height: auto;
+  }
+  
+  .projects-section .project-column .project-image {
+    flex: 2 0 250px;
+    min-height: 250px;
   }
   .section-title h1 {
     font-size: 32px;
